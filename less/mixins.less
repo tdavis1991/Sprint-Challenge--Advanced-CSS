@@ -1,1 +1,16 @@
-// Mixins Here
+.btn-style (@pad, @wide) {
+    background-color: @btn-bg-color;
+    padding: @pad 0px;
+    width: @wide;
+}
+
+.mobile-center () {
+    width: 93%;
+    margin: 0 auto;
+}
+
+ .no-display-mobile () {
+     @media @phone {
+         display: none;
+     }
+ }

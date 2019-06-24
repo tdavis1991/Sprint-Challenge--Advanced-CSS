@@ -1,1 +1,42 @@
-// Navigation code here
+.home-nav {
+    width: 100%;
+    background-color: @wild-sand;
+    display: flex;
+    justify-content: center;
+
+    @media @phone {
+        width: 100%;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        width: 800px;
+
+        @media @phone {
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 10px auto;
+            animation-name: fade;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+
+            a {
+                margin: 0px 15px;
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
