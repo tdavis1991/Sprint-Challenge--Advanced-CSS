@@ -1,4 +1,4 @@
-// Home Content
+
 
 .home {
   @media @phone {
@@ -42,16 +42,12 @@
     }
 
     .sky {
-      @media @phone {
-        display: none;
-      }
+      .no-display-mobile;
     }
 
     .launch {
-      @media @phone {
-        display: none;
-      }
-    }
+      .no-display-mobile;
+     }
 
   }
 
@@ -108,7 +104,8 @@
           border-radius: 5px;
           color: white;
           &:hover {
-            background-color: lighten(@btn-bg-color, 10%)
+            background-color: lighten(@btn-bg-color, 10%);
+            color: blue;
           }
           cursor: pointer;
 
@@ -134,4 +131,4 @@
       }
     }
   }
-}// home
+}
